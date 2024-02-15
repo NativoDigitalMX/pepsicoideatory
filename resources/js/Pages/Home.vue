@@ -29,7 +29,7 @@
                     Ver archivo completo
                 </a>
             </div>
-            <div class="whitespace-nowrap relative h-12 mt-6">
+            <div class="whitespace-nowrap relative h-12 mt-6 overflow-hidden">
                 <div class="w-full h-16 top-0 absolute overflow-x-scroll overflow-y-hidden space-x-8 pt-2">
                     <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">INTELIGENCIA ARTIFICIAL</a>
                     <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">METAVERSO</a>
