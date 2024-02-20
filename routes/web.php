@@ -19,4 +19,5 @@ use App\Http\Controllers\TrendController;
 // Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/show', [TrendController::class, 'show'])->name('trend.show');
+Route::get('/tendencias/{trend:slug}', [TrendController::class, 'index'])->name('trends.index');
+Route::get('/tendencias/{trend:slug}', [TrendController::class, 'show'])->name('trends.show');

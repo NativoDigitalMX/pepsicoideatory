@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('subtitle');
             $table->text('description');
             $table->text('relevant');
-            $table->string('image');
-            $table->boolean('active')->default(true); 
+            $table->string('image')->nullable();
+            $table->boolean('active')->default(true);
 
             $table->foreignId('category_id')->constrained();
 

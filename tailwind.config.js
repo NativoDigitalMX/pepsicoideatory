@@ -13,7 +13,8 @@ export default {
         colors: {
             blue: "#0079D3",
             lightBlue: "#E6EDF3",
-            sharePointBlue: "#0A4678"
+            sharePointBlue: "#0A4678",
+            gray: '#7F8390'
         },
         fontFamily: {
             sans: ["HelveticaNowDisplay", "Verdana", "sans-serif"],

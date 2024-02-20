@@ -30,25 +30,24 @@
                 </a>
             </div>
             <div class="whitespace-nowrap relative h-12 mt-6 overflow-hidden">
-                <div class="w-full h-16 top-0 absolute overflow-x-scroll overflow-y-hidden space-x-8 pt-2">
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">INTELIGENCIA ARTIFICIAL</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">METAVERSO</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">COMUNIDADES</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">PHYGITAL</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">PLATAFORMAS</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">GEN Z</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">SOCIAL MEDIA</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">INTELIGENCIA ARTIFICIAL</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">METAVERSO</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">COMUNIDADES</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">PHYGITAL</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">PLATAFORMAS</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">GEN Z</a>
-                    <a href="" class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1">SOCIAL MEDIA</a>
+                <div class="w-full h-16 top-0 absolute overflow-x-scroll overflow-y-hidden space-x-6 pt-2">
+                    <a v-for="(category, index) in categories" :key="index" v-if="categories.length"
+                        href=""
+                        class="relative inline-block bg-lightBlue text-sharePointBlue text-sm font-medium rounded-3xl px-6 py-1"
+                    >
+                        {{ category.name }}
+                    </a>
                 </div>
             </div>
 
-            <div class="">GRID</div>
+            <div class="">
+                <a v-for="(trend, index) in trends" :key="index" v-if="trends.length"
+                   :href="`tendencias/${trend.slug}`"
+                     class=""
+                >
+                    {{ trend.title }}
+                </a>
+            </div>
 
         </div>
     </section>
@@ -59,6 +58,10 @@
 
 export default {
     name: "Home",
+    props: {
+        categories: Object,
+        trends: Object
+    },
     data() {
         return {
 
