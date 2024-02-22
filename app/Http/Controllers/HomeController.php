@@ -10,12 +10,35 @@ use Inertia\Inertia;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $categories = Category::all();
 
-        $trends = Trend::all();
+        return Inertia::render("Home", [
+            'categories' => Category::all(),
+            'trends' => Trend::when($request->input('search'), function ($query, $search) {
+                    $query->where('title', 'like', "%{$search}%")
+                        ->orWhere('subtitle', 'like', "%{$search}%")
+                        ->orWhere('description', 'like', "%{$search}%")
+                        ->orWhere('relevant', 'like', "%{$search}%")
+                        ->orderBy('id', 'desc')
+                        ->get()
+                        ->load('category');
+                })
+                ->when($request->input('category'), function ($query, $category) {
+                    $query->where('category_id', $category)
+                        ->orderBy('id', 'desc')
+                        ->get()
+                        ->load('category');
+                })
+                ->orderBy('id', 'desc')
+                ->get()
+                ->load('category'),
+            'filters' => $request->only(['search', 'category']),
+        ]);
 
-        return Inertia::render('Home', compact(['categories', 'trends']));
+
+        //$trends = Trend::orderByDesc('id')->get()->load('category');
+
+        //return Inertia::render('Home', compact(['categories', 'trends']));
     }
 }

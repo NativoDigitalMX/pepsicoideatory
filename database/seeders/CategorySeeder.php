@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
             'name' => 'Web 3.0'
         ]);
         Category::create([
-            'name' => 'E-Commerce'
+            'name' => 'Commerce'
         ]);
         Category::create([
             'name' => 'Creativity'
