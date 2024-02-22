@@ -3,7 +3,7 @@
     <section class="bg-banner bg-cover py-20 text-white shadow-lg">
         <div class="container flex items-stretch">
             <div class="w-2/12">
-                <a href="" class="underline">Inicio</a>
+                <a href="/" class="underline">Inicio</a>
             </div>
             <div class="w-10/12">
                 <h1 class="text-7xl font-extrabold">
@@ -23,7 +23,7 @@
                 <h2 class="text-5xl">
                     Tendencias
                     <br>
-                    Principales
+                    principales
                 </h2>
 <!--                <a href="" class="w-52 h-10 bg-blue flex justify-center items-center text-white rounded-md text-sm">
                     Ver archivo completo
