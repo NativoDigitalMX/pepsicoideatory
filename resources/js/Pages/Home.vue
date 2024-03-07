@@ -1,5 +1,14 @@
 <template>
 
+    <!-- Meta Tags -->
+    <Head>
+        <title>Pepsico</title>
+        <meta
+            name="description"
+            content="Tu dosis bimestral de alimento para la creatividad."
+        />        
+    </Head>
+
     <section class="bg-banner bg-cover py-20 text-white shadow-lg">
         <div class="container flex items-stretch">
             <div class="w-2/12">

@@ -1,7 +1,7 @@
 <template>
     <!-- Meta Tags -->
     <Head>
-        <title>Reporte de Tendencias Ideatory</title>
+        <title>Pepsico</title>
         <meta
             name="description"
             content="Tu dosis bimestral de alimento para la creatividad."

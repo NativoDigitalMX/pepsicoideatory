@@ -1,5 +1,14 @@
 <template>
 
+    <!-- Meta Tags -->
+    <Head>
+        <title>{{ trend.title }}</title>
+        <meta
+            name="description"
+            :content="trend.subtitle"
+        />        
+    </Head>
+
     <section class="bg-banner bg-cover py-20 text-white shadow-lg">
         <div class="container">
             <div class="flex items-stretch">
