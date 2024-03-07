@@ -1,11 +1,32 @@
 <template>
     <!-- Meta Tags -->
     <Head>
-        <title>Pepsico Ideatory</title>
+        <title>Reporte de Tendencias Ideatory</title>
         <meta
             name="description"
-            content=""
+            content="Tu dosis bimestral de alimento para la creatividad."
         />
+
+        <!-- og tags Facebook -->
+        <meta property="og:title" content="Reporte de Tendencias Ideatory">
+        <meta property="og:description" content="Tu dosis bimestral de alimento para la creatividad.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://pepsicoideatory.com/">
+        <meta property="og:image" content="../../images/share.png">
+        <meta property="og:site_name" content="pepsicoideatory.com">
+        <meta name="author" content="Pepsico Ideatory">
+        <link rel="icon" type="image/x-icon" href="../../images/logo_ideatory.ico">  
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LM7NP97NE2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LM7NP97NE2');
+        </script>
+        
     </Head>
 
     <!-- Start Header Section -->
