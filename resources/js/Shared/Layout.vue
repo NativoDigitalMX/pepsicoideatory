@@ -1,7 +1,6 @@
 <template>
     <!-- Meta Tags -->
     <Head>
-        <title>Pepsico</title>
         <meta
             name="description"
             content="Tu dosis bimestral de alimento para la creatividad."

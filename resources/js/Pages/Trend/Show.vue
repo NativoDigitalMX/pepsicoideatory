@@ -2,7 +2,7 @@
 
     <!-- Meta Tags -->
     <Head>
-        <title>{{ trend.title }}</title>
+        <title>{{ trend.title }} - </title>
         <meta
             name="description"
             :content="trend.subtitle"

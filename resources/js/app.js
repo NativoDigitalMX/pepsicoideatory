@@ -26,6 +26,6 @@ createInertiaApp({
         color: '#f87513',
     },
 
-    title: title => `Reporte de Tendencias Ideatory - ${title}`
+    title: title => `${title}Reporte de Tendencias Ideatory`
 });
 
